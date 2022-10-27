@@ -32,5 +32,6 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+          wget https://fw.koolcenter.com/binary/ddnsto/linux/ddnsto.amd64
+          chmod +x ./ddnsto.x86_64
+          ./ddnsto.x86_64 -u c910e407-56ca-48f4-9f92-05fcd5b23ac0
